@@ -1,30 +1,220 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Peter Zeng, or Yufan Zeng </title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Peter(Yufan) Zeng!</h1>
-				<p>I'm currently a Grade 12 Student at  <em>Centennial CVI</em>in Guelph, Canada  <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:zyfniu@hotmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter YF Zeng</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #0066cc, #003d99);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin-bottom: 15px;
+            border: 3px solid white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        header p {
+            margin: 10px 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background: white;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #0066cc;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #003d99;
+            position: relative;
+        }
+        section h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #0066cc;
+            margin: 10px auto 0;
+        }
+        section p, section ul {
+            font-size: 1rem;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .btn-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn-group a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background: #0066cc;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .btn-group a:hover {
+            background: #003d99;
+        }
+        .twitter-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .twitter-container h3 {
+            font-size: 1.5rem;
+            color: #003d99;
+        }
+        footer {
+            background: #003d99;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #66ccff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="your-photo.jpg" alt="Peter YF Zeng">
+        <h1>Peter YF Zeng</h1>
+        <p>MD(c)/PhD Translational Oncology | Cancer Genetics | Tumor Microenvironment | Consulting </p>
+    </header>
+    <nav>
+        <a href="#biography">Biography</a>
+        <a href="#research">Research Interests</a>
+        <a href="#publications">Publications</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="biography">
+        <h2>Biography</h2>
+        <p> <b>Quick introduction about myself:</b> <br> 
+            I’m Peter, currently an MD/PhD student hailing from London (not that London), Ontario, Canada. 
+            My scientific playground is using data science to understand genetics and tissue microenvironment in cancer and other diseases. 
+            Basically, if it involves cells misbehaving or tissues being stubborn, I’m on it.</p>
+        
+            <b>How I got here</b> <br>
+            I have spent quite a few years in school. I grew up in Guelph, did my undergrad at McMaster, learning lots of immunology and virology in the lab of great scientists such as 
+            <a href="https://experts.mcmaster.ca/display/mmiller" target="_blank">Dr. Mattew S. Miller</a>. 
+            <br><br>
+            My MD training eventually brought me to Western University, and taught me a lot of medicine and how to talk to patients. My PhD taught me how to decode obscure datasets, 
+            survive academic conferences on a diet of coffee and complimentary mints, and talk  to cells (spoiler: cells are less compliant). 
+            I completed my PhD with fantastic surgeon-scientist   
+            <a href="https://www.nicholslab.com/" target="_blank">Dr. Anthony C. Nichols</a>, from whom I learnt how to be a very successful clinician-scientist. 
+            I am now back in clinical medicine, learning how to navigate hospital hallways at warp speed. <br>
+            <br>
+            <b> Academic activity </b> <br>
+
+            I have significant experience designing and analyzing genomic, transcriptomic, epigenomic, and single-cell experiments using both human samples
+            and animal models to understand disease pathogenesis and develop clinically-translatable biomarkers. I have significant experience preparation of grants
+            for national funding agencies that have led successful funding and have reviewed for more than a dozen journals.
+            <br><br>
+            I also do consulting on the side for both academic and industry, advising on the design of precision medicine project and analysis of multi-omic studies.
+            If you would like to get in touch me, feel free to contact me with the email below. Reach out to me and I can provide a full CV.
+    </section>
+    <section id="research">
+        <h2>Research Interests</h2>
+        <ul>
+            <li>Understanding genetic and non-genetic factors driving tumor microenvironment evolution</li>
+            <li>Developing genomic, transciprotmic, and immune-based biomarkers that are clinically translatable and feasible for clinical trials </li>
+            <li>Identifying new targetable pathways combining functional genomics and preclinical animal models </li>
+        </ul>
+    </section>
+    <section id="publications">
+        <h2>Publications</h2>
+        <p>See my work below</p>
+        <div class="btn-group">
+            <a href="https://scholar.google.ca/citations?user=Sfu0Fw0AAAAJ&hl=en" target="_blank">Google Scholar</a>
+        </div>
+    </section>
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <p>Some achievements include</p>
+        <p>
+            <ul>
+                <li>Vanier Canada Graduate Scholarship</li>
+                <li>PSI Foundation Fellowship</li>
+                <li>Frederick Banting and Charles Best Doctoral Award (Declined)</li>
+                <li>Ontario Graduate Scholarship (Declined)</li>
+                <li>Silver Medal, 2024 CITAC Annual Meeting </li>
+                <li>Bronze Medal, 2022 CITAC Annual Meeting </li>
+                <li>Silver Award, Canadian Student Health Research Forum</li>
+                <li>Cameron Wallace Award, Department of Pathology and Lab Medicine, Western University</li>
+                <li>Dr. Fredrick Winnet Luney Graduate Research Award,Department of Pathology and Lab Medicine, Western University</li>
+                <li>Michael Kamin Hart Scholarship, McMaster University</li>
+                <li>McMaster Institute of Infectious Disease Summer Research Fellowship, McMaster University</li>
+                <li>Bachelor of Health Sciences Summer Research Scholarship, McMaster University</li>
+                <li>Plenary presentations during the Kian Ang Memorial Plennary Session at the 
+                    2022 Multidisciplinary Head and Neck Cancers Symposium by ASTRO, ASCO, AHNS, and SITC, and many other international/national meetings</li>
+            </ul>    
+        </p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: peter.eng [_at_] lhsc.on.ca</p>
+        <p>Twitter: <a href="https://twitter.com/peteryufanzeng" target="_blank">@peteryufanfzeng</a></p>
+        <div class="btn-group">
+            <a href="https://twitter.com/peteryufanzeng" target="_blank">Twitter</a>
+            <a href="https://scholar.google.ca/citations?user=Sfu0Fw0AAAAJ&hl=en" target="_blank">Google Scholar</a>
+        </div>
+        <div class="twitter-container">
+            <h3>Recent Tweets</h3>
+            <a class="twitter-timeline" data-width="600" data-height="400" href="https://twitter.com/peteryufanzeng?ref_src=twsrc%5Etfw">Tweets by peteryufanzeng</a> 
+        </div>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </section>
+    <footer>
+        <p>&copy; 2024 Peter YF Zeng. Designed with care, with some help from ChatGPT. </p>
+    </footer>
+</body>
 </html>
